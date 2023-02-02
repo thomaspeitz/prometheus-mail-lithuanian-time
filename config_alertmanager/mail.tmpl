@@ -1,0 +1,13 @@
+{{ define "custom_mail_subject" }}Alert on {{ range .Alerts.Firing }}{{ .Labels.instance }} {{ end }}{{ end }}
+{{ define "custom_mail_html" }}
+<html>
+<head>
+<title>Alert!</title>
+<h1>Time</h1>
+{{ range .Alerts.Firing }}
+   Normal Time {{ .StartsAt.Format "15:04:05 2006-01-02" }}
+   Lithuanian Time {{ .StartsAt.Local.Format "15:04:05 2006-01-02" }}
+{{ end }}
+</head>
+</body></html>
+{{ end }}
