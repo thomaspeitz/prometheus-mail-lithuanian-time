@@ -1,16 +1,10 @@
 # Prometheus monitoring using docker compose
 
-This repo contains a docker compose script making use of the Prometheus, Prometheus Alertmanager, Mailhog, Stunnel and Python images. Containers are connected together using a bridge network in order to provide a complete monitoring and alert system able to run locally. Solution was tested on Linux and Windows but should work on any platform able to run Docker.
+Example repository based on - https://github.com/PhiCygni/prometheus-plus-altermanager-mailhog-smtp-docker-compose
 
-[https://phicygni.com/](https://phicygni.com/)
+Explains how to send emails in different timezones
 
-[https://github.com/PhiCygni](https://github.com/PhiCygni)
-
-[https://medium.com/@emileross](https://medium.com/@emileross)
-
-[https://twitter.com/PhiCygni](https://twitter.com/PhiCygni)
-
-[https://www.facebook.com/PhiCygni/](https://www.facebook.com/PhiCygni/)
+Tags - Prometheus, timezone, alertmanager, local time, .StartsAt.Local.Format
 
 # Usage
 
